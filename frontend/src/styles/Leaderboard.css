@@ -1,0 +1,222 @@
+.leaderboard-container {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.leaderboard-header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.back-button {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f1f5f9;
+  color: #475569;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.leaderboard-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.leaderboard-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.leaderboard-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.leaderboard-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 32px;
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-item:hover {
+  background: #f8fafc;
+}
+
+.leaderboard-item.current-user {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 2px solid #f59e0b;
+  margin: 4px;
+  border-radius: 12px;
+}
+
+.rank-section {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.rank-icon.gold {
+  color: #fbbf24;
+}
+
+.rank-icon.silver {
+  color: #9ca3af;
+}
+
+.rank-icon.bronze {
+  color: #d97706;
+}
+
+.rank-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.intern-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.intern-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.referral-code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.donation-amount {
+  text-align: right;
+}
+
+.amount {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #059669;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.personal-stats {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.personal-stats h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.rank-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.your-rank {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.rank-label {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .leaderboard-header {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .back-button {
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+  }
+  
+  .leaderboard-main {
+    padding: 24px 16px;
+  }
+  
+  .leaderboard-item {
+    padding: 16px;
+  }
+  
+  .intern-info {
+    margin-left: 16px;
+  }
+  
+  .intern-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .amount {
+    font-size: 1.1rem;
+  }
+}
