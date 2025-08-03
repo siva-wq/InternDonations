@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = 'https://interndonations.onrender.com/api';
 
 export const fetchUserData = async (userId) => {
   try {
@@ -77,3 +77,4 @@ export const addDonation = async (donationData) => {
     throw error;
   }
 };
+
